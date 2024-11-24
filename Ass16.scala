@@ -94,7 +94,24 @@ object Ass16
      if(!fg)
      {
         println("Student with " +course +" not found..")
+        
+    }
+  println("name of studnt by course :")
+  var s=arr.map(findStudentOfCourse(arr,course))
+  println(s)
 
-     }
-    } 
+    }
+
+    def findStudentOfCourse(student:Array[Student],sname:String ):String={
+        for(i <- 0 to student.length-1)
+        {
+            if(student(i).getCourse().equals(sname))
+            return student(i).getName()
+        }
+        return " "
+
+
+
+    }
+
 }
