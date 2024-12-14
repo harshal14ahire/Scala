@@ -14,12 +14,13 @@ object ArrayWithMultipleOf3And5
             arr1(i)=readInt
         }
 
-        /* var arr3=arr1.filter(_ % 3==0)
-       arr3= arr3.filter(_ % 5==0)   println("intersection of Array1 and Array 2:")
+         var arr3=arr1.filter(_ % 3==0)
+       arr3= arr3.filter(_ % 5==0)   
+       println("array number with multiple of 3,5:")
         for( i <- arr3)
         {
            println(i)
         }
-        */  
+        
         }
 }

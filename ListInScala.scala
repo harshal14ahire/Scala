@@ -4,7 +4,7 @@ object ListInScala{
     def main(args:Array[String])
     {  println("Five Ways to create List in scala")
 
-        println(" 1.Scaala List using uing List Style:")
+        println(" 1.Scaala List using uing lisp Style:")
         var lispstyle= 2::3::4::Nil
         println(lispstyle)
 
@@ -16,7 +16,7 @@ object ListInScala{
         println("3.thid way is Uisng the fill() method")
         var filllist=List.fill(5)("shiva")
         println(filllist)
-   println("4.List Using tablute() ,method of List")
+        println("4.List Using tablute() ,method of List")
         var tabulatelist=List.tabulate(11)(n =>n*n)
        println(tabulatelist)
 
@@ -24,10 +24,7 @@ object ListInScala{
      var     javalikelist=List("shuhash","is","going","to","make","billion","dollars","in","10 years")
    
    println(javalikelist)
-
-
-
-
-        
+   
+     
     }
 }

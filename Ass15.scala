@@ -4,20 +4,20 @@ import scala.util.control._
 class Account {
     private var accno: Int = 0
     private var name: String = ""
-    private val minbal: Float = 500.0f // Made minbal a val as it's a constant
+    private val minbal: Float = 500.0f 
     private var bal: Float = 0.0f
 
-    // Secondary constructor
-    def this(accno: Int, name: String, bal: Float) { // Change bal type to Float for consistency
+    
+    def this(accno: Int, name: String, bal: Float) { 
         this()
         this.accno = accno
         this.name = name
         this.bal = bal
     }
 
-    def viewBalance(): Float = bal // Corrected the syntax for viewBalance
+    def viewBalance(): Float = bal 
 
-    def deposit(newbal: Float): Unit = { // Corrected spelling to 'deposit' and added '='
+    def deposit(newbal: Float): Unit = { 
         bal = bal + newbal
     }
 
@@ -30,7 +30,7 @@ class Account {
         }
     }
 
-    override def toString: String = { // Fixed "overide" typo (was "overide") and syntax
+    override def toString: String = { 
         s"AccNo: $accno\nName: $name\nBalance: $bal"
     }
 
@@ -45,7 +45,7 @@ object Ass15 {
         var arr = new Array[Account](n)
 
         for (i <- 0 until n)
-         { // Replaced 'to' with 'until' for proper array indexing
+         { 
             println("Enter Account Holder Name & Opening Balance:")
             val name = readLine()
             val openingBalance = readFloat()
@@ -57,6 +57,7 @@ object Ass15 {
         val outer = new Breaks
         val inner = new Breaks
 
+ 
         outer.breakable
          {
             while (true) 

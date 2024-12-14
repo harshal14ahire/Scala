@@ -83,6 +83,8 @@ object Ass16
         { 
           println(ans)   
         } 
+
+        
         println("Using Simple Approach...")
         var fg :Boolean=true
         for(i <- 0 to n-1)

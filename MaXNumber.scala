@@ -6,7 +6,8 @@ object MaXNumber{
         var a=readInt
         var b=readInt
         var c= readInt
-        var  max= if(a>b && a>c) c else  if(b>a && b>c) b else c
+        var  max= if(a>b && a>c) a else  if(b>a && b>c) b else c
+        
         println(" Maximum Number between three is:"+max);
         
     }

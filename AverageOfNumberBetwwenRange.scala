@@ -1,17 +1,17 @@
 // program to find avrage of number from in interval n1 to n2
 
 import scala.io.StdIn.{readInt,readFloat}
-object AverageOfNumberBetwwenRange{
+object AverageOfNumberBetwwenRange
+{
     def main(args:Array[String])
     {
         println(" enter n1 orlb:")
         val n1:Int=readInt
         println("Enter ub or n2:")
         val n2:Int=readInt
-        
         if(n1<n2)
-        {
-            var sum=0
+        {var sum=0
+           
            for(i <- n1 to n2)
            {
             sum=sum+i

@@ -1,4 +1,5 @@
 import scala.io.StdIn.{readLine,readChar}
+///replacde string character if char(num)=>* char(alphabet)=>? char(space)=>@
 
 object StringCharReplacement
 {
